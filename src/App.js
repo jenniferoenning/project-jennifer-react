@@ -1,23 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {C_Button} from './components/Components'
 
 function App() {
+  function showAlert(){
+    alert('TESTE');
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header style={{backgroundColor: 'pink', padding: 20}}>
+        <span>Jennifer Stang Oenning</span>
+        <C_Button onClick={() => {showAlert()}} label="botao 1" />
       </header>
     </div>
   );
