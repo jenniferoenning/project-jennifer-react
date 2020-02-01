@@ -12,6 +12,7 @@ Commands:
 
 2 - Navegue até a pasta.
 
-3 - Terminal: `npm install` e `npm start` ou se preferir yarn `yarn install` `yarn start`
+3 - Terminal: NPM `npm install` e `npm start` 
+    ou YARN `yarn install` `yarn start`
 
 4 - GOGO! Seja Bem vindo :D
