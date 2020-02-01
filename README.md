@@ -1,6 +1,6 @@
-### JenniferOenning BLOG
+### JenniferOenning Portfólio
 
-Este blog foi feito para meus estudos em React :D
+Este Portfólio foi feito para meus estudos em React :D
 
 ### Install Project
 
