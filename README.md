@@ -1,7 +1,6 @@
 ### JenniferOenning BLOG
 
-Este blog foi feito para meus estudos em React, 
-estou ainda aprendendo, então se houver umas "gambiarras", sorry kkk :D
+Este blog foi feito para meus estudos em React :D
 
 ### Install Project
 
@@ -11,8 +10,6 @@ Commands:
 
 2 - Navegue até a pasta.
 
-3 - Terminal `npm start` ou se você tiver yarn `yarn start`
+3 - Terminal: `npm start` ou se você tiver yarn `yarn start`
 
-4 - GOGO! Seja Bem vindo :D 
-
-=================================================================================
+4 - GOGO! Seja Bem vindo :D
