@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { C_Button } from "./Components";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Card from "./Card";
 
 function Page() {
   // var teste = undefined;
@@ -15,7 +14,7 @@ function Page() {
   const [visibilityButton, setVisibilityButton] = useState(undefined);
 
   function clickLogo() {
-    document.getElementById("container").scrollTo(0, 1222);
+    document.getElementById("container").scrollTo(0, document.getElementById("containerBoxes").offsetTop);
     setVisibilityButton(true);
   }
 
@@ -23,28 +22,44 @@ function Page() {
   // ele vai ser chamado a cada vez que o estado for chamado (pageSize).
 
   useEffect(() => {
-    var size = window.innerHeight * 2;
+    var size = window.innerHeight;
     setPageSize(size);
   }, []);
+
+  var cards = [
+    {
+      title: "Sete Melhores",
+      paragraph:"Projeto desenvolvido para melhores localidades da região de Jaraguá do Sul",
+      link: "http://dev.setemelhores.com/jaragua-do-sul/",
+      transition: "0.5s"
+    },
+    {
+      title: "PPnewsfb",
+      paragraph: "Projeto desenvolvido para postagens de notícias",
+      link: "https://ppnewsfb.com.br/",
+      transition: "1s"
+    }
+  ];
 
   return (
     <div
       id="container"
       style={{
-        maxHeight: 950,
-        overflowY: "hidden",
+        maxHeight: pageSize,
+        overflowY: "auto",
+        overflowX:"hidden",
         scrollBehavior: "smooth",
         position: "relative"
       }}
     >
-      <div style={{ height: pageSize }}>
+      <div style={{ height: pageSize}}>
         <div
           style={{
             height: 255,
             left: "50%",
             top: "50%",
             position: "absolute",
-            marginTop: -125,
+            marginTop: -247,
             marginLeft: -125,
             display: "grid"
           }}
@@ -61,14 +76,14 @@ function Page() {
               bottom: 30,
               right: 30,
               opacity: 1,
-              Zindex: 1000,
               transition: "0.5s",
               transform: `scale(${!visibilityButton ? "0" : "1"})`,
               justifyContent: "center",
               display:"flex",
               alignItems:"center",
               visibility: visibilityButton ? undefined : "hidden",
-              cursor:"pointer"
+              cursor:"pointer",
+              zIndex:99
             }}
             id="button"
             onMouseOver={() => {
@@ -104,21 +119,15 @@ function Page() {
           ></img>
 
           <h1 style={{ marginTop: 20, color: "pink" }}>Jennifer Oenning</h1>
-          <div className="containerBoxes">
-            <div style={{ paddingRight:8,paddingTop:-8,position:"absolute",width: 300, height: 150, borderRadius: 20, backgroundColor: "pink", opacity: 0.5, zIndex: 0 }}>
+        </div>
+      </div>
+      <div id="containerBoxes" style={{height:pageSize}}>
+        <div style={{ flexWrap:"wrap",display:"flex",justifyContent:"center",margin:20}}>
+          {cards.map((item) =>
+            <div style={{ transition:item.transition ,padding:20,marginBottom:40, width:"29%"}}>
+              <Card title={item.title} paragraph={item.paragraph} link={item.link} />
             </div>
-            <a>
-              <div style={{ padding:20,position: "absolute",width:300, height: 150, borderRadius:20 ,backgroundColor: "#2c2c2c", zIndex:1}}>
-                <div style={{ position:"relative",top:-9,marginBotton: 13, width: 196, height: 35, backgroundColor: "pink", borderRadius: 5, zIndex: 1, marginLeft:-32, display:"inline-table",padding:2}}>
-                  <h2 style={{ marginTop: 5, textAlign: "center", fontSize: 17, color:"#3f3f3f"}}>Alert Twitch</h2>
-                </div>
-                <div>
-                  <a style={{ color:"#d5d5d5",fontSize:18 }}>Projeto para alerts da twitch para ser interativo nas streams.</a>
-                  <a style={{position:"relative", bottom:-60,cursor:"pointer", color:"pink"}}>Read More...</a>
-                </div>
-              </div>
-            </a>
-          </div>
+          )}
         </div>
       </div>
     </div>
