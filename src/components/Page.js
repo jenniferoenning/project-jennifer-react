@@ -124,7 +124,7 @@ function Page() {
       <div id="containerBoxes" style={{height:pageSize}}>
         <div style={{ flexWrap:"wrap",display:"flex",justifyContent:"center",margin:20}}>
           {cards.map((item) =>
-            <div style={{ transition:item.transition ,padding:20,marginBottom:40, width:"29%"}}>
+            <div className="containerBox" style={{ transition:item.transition ,padding:20,marginBottom:40}}>
               <Card title={item.title} paragraph={item.paragraph} link={item.link} />
             </div>
           )}
