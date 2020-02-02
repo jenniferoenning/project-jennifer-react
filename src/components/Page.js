@@ -104,6 +104,21 @@ function Page() {
           ></img>
 
           <h1 style={{ marginTop: 20, color: "pink" }}>Jennifer Oenning</h1>
+          <div className="containerBoxes">
+            <div style={{ paddingRight:8,paddingTop:-8,position:"absolute",width: 300, height: 150, borderRadius: 20, backgroundColor: "pink", opacity: 0.5, zIndex: 0 }}>
+            </div>
+            <a>
+              <div style={{ padding:20,position: "absolute",width:300, height: 150, borderRadius:20 ,backgroundColor: "#2c2c2c", zIndex:1}}>
+                <div style={{ position:"relative",top:-9,marginBotton: 13, width: 196, height: 35, backgroundColor: "pink", borderRadius: 5, zIndex: 1, marginLeft:-32, display:"inline-table",padding:2}}>
+                  <h2 style={{ marginTop: 5, textAlign: "center", fontSize: 17, color:"#3f3f3f"}}>Alert Twitch</h2>
+                </div>
+                <div>
+                  <a style={{ color:"#d5d5d5",fontSize:18 }}>Projeto para alerts da twitch para ser interativo nas streams.</a>
+                  <a style={{position:"relative", bottom:-60,cursor:"pointer", color:"pink"}}>Read More...</a>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
