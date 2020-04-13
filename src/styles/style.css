@@ -22,7 +22,7 @@ body{
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: pink; 
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* Handle on hover */
