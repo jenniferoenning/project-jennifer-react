@@ -5,7 +5,6 @@ import Page from './components/Page';
 function App() {
     return (
         <div>
-        aaaaaaaaa
             <Page />
         </div>
     )
