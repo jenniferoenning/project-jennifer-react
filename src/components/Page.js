@@ -30,13 +30,19 @@ function Page() {
     {
       title: "Sete Melhores",
       paragraph:"Projeto desenvolvido para melhores localidades da região de Jaraguá do Sul",
-      link: "http://dev.setemelhores.com/jaragua-do-sul/",
+      link: "https://setemelhores.com/jaragua-do-sul/",
       transition: "0.5s"
     },
     {
       title: "PPnewsfb",
       paragraph: "Projeto desenvolvido para postagens de notícias",
       link: "https://ppnewsfb.com.br/",
+      transition: "1s"
+    },
+    {
+      title: "DiarioAv",
+      paragraph: "Projeto desenvolvido para postagens de notícias",
+      link: "https://dev.diarioav.com.br/",
       transition: "1s"
     }
   ];

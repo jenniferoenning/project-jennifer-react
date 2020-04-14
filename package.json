@@ -14,11 +14,8 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-<<<<<<< HEAD
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-=======
->>>>>>> d320ba17146a26d1d730c0225d7cdd969753766f
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
