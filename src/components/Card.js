@@ -9,7 +9,7 @@ function Card({ title, paragraph, link}) {
                 <h2 style={{ marginTop: 5, textAlign: "center", fontSize: 17, color: "#3f3f3f" }}>{title}</h2>
             </div>
             <div style={{height:"68%"}}>
-                <p style={{ wordBreak:"break-all",height:"82%", color: "#d5d5d5", fontSize: 18 }}>{paragraph}</p>
+                <p style={{ height:"82%", color: "#d5d5d5", fontSize: 18 }}>{paragraph}</p>
             <div style={{ textAlign: "end", cursor: "pointer", color: "pink" }}><a style={{textDecoration: "none", color:"pink"}} href={link} target="_blank">Read More...</a></div>
             </div>
         </div>
