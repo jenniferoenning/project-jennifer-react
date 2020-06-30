@@ -42,7 +42,7 @@ function Page() {
     {
       title: "DiarioAv",
       paragraph: "Projeto desenvolvido para postagens de notícias",
-      link: "https://dev.diarioav.com.br/",
+      link: "https://diarioav.com.br/",
       transition: "1s"
     }
   ];
@@ -121,8 +121,7 @@ function Page() {
               height: 200,
               borderRadius: 100
             }}
-            src="https://instagram.fjoi5-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/83875171_191377635390287_2085185710885606317_n.jpg?_nc_ht=instagram.fjoi5-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=Wwr8Md5J4qwAX_Pxg27&oh=6653a48ca99b346892f053c649e545ef&oe=5EBFAAB8"
-          ></img>
+            src="/img/logo.jpg"></img>
 
           <h1 style={{ marginTop: 20, color: "pink" }}>Jennifer Oenning</h1>
         </div>
